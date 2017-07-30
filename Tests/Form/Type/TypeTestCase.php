@@ -37,6 +37,6 @@ abstract class TypeTestCase extends BaseTypeTestCase
 
     protected function createRequestStackMock()
     {
-        return $this->requestStack = $this->getMock('Symfony\Component\HttpFoundation\RequestStack');
+        return $this->requestStack = $this->getMockBuilder('Symfony\Component\HttpFoundation\RequestStack')->getMock();
     }
 }
